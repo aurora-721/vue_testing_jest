@@ -3,7 +3,7 @@
     <div 
      v-for="todo in todos"
      :key="todo.id"
-      data-test="todo"
+      data-libera="todo"
       :class="[todo.completed ? 'completed': '']"
     >
         {{ todo.text }}
@@ -31,6 +31,11 @@ export default {
             {
             id: 1,
             text: 'Learn Vue Testing',
+            completed: false
+            },
+            {
+            id: 2,
+            text: 'Learn Vue Testing 2',
             completed: false
             }
         ]
